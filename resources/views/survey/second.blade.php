@@ -20,6 +20,23 @@
             </div>
         @endforeach
 
+
+        <h2 class="text-2xl font-semibold">Have you used AI in any capacity during this quiz?</h2>
+
+        <div>
+            <input type="radio" name="ai_check" id="true"
+                                value="true"
+                                class="focus:ring-gray-950 focus:text-gray-950 text-gray-950">
+            <label for="true">Yes</label>
+        </div>
+
+        <div>
+            <input type="radio" name="ai_check" id="false"
+                                value="false"
+                                class="focus:ring-gray-950 focus:text-gray-950 text-gray-950">
+            <label for="false">No</label>
+        </div>
+
         <button type="submit" class="bg-gray-950 text-white p-2 rounded-md uppercase font-semibold text-lg mt-4">Submit Answers</button>
 
     </form>

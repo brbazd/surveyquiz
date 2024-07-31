@@ -50,13 +50,25 @@ class SurveyController extends Controller
 
         $validated = $request->validate([
             'val' => 'required',
-            'val.*' => 'required|string'
+            'val.*' => 'required|string',
+            'ai_check' => "required"
         ]);
 
 
+        // dd($validated['ai_check']);
+
         $output = Output::where('ip_address', $request->ip())->first();
 
-        $output->data2 = json_encode($validated);
+        $output->data2 = json_encode($validated['val']);
+
+        if($validated['ai_check'] == 'false')
+        {
+            $output->ai_check = false;
+        }
+        else
+        {
+            $output->ai_check = true;
+        }
 
         $output->save();
 
