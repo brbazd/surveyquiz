@@ -40,7 +40,7 @@ class AssignmentController extends Controller
         ]);
 
         $assignment = Assignment::create([
-            'title' => $validated->title
+            'title' => $validated['title']
         ]);
 
         return redirect()->route('assignments.index');

@@ -9,7 +9,7 @@
                 <input type="text" name="title" id="title">
             </div>
 
-            <button type="submit">Add Answer</button>
+            <button type="submit">Add Question</button>
         </form>
     </div>
 
