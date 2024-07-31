@@ -19,7 +19,7 @@ class CheckIfInProgress
 
         $output = DB::table('outputs')->where('ip_address',$request->ip())->first();
 
-        if(!$output->data2)
+        if(!$output?->data2)
         {
             return $next($request);
         }
