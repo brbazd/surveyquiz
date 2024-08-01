@@ -12,27 +12,27 @@
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
                 <th scope="col" class="px-6 py-3">
-                    IP Address
-                </th>
-                <th scope="col" class="px-6 py-3">
                     Data from Survey
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Data from Quiz
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Used AI in quiz?
                 </th>
             </tr>
         </thead>
         <tbody>
             @foreach ($outputs as $output)
             <tr class="odd:bg-white even:bg-gray-50 border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    {{$output->ip_address}}
-                </th>
                 <td class="px-6 py-4">
                     {{$output->data}}
                 </td>
                 <td class="px-6 py-4">
                     {{$output->data2}}
+                </td>
+                <td class="px-6 py-4">
+                    {{$output->ai_check}}
                 </td>
             </tr>
             @endforeach

@@ -1,7 +1,7 @@
 <x-guest-layout>
     <div class="my-4">
         <h1 class="text-4xl font-bold py-2">Welcome to my survey</h1>
-        <p>This is my survey regarding people's thoughts and relationship with AI and its uses in both teaching and assisting in programming. You have a couple of questions to answer and 5 programming tasks to complete. A couple of minutes of your time will help me tremendously.</p>
+        <p>This is my survey regarding people's thoughts and relationship with AI and its uses in both teaching and assisting in programming. You have a couple of questions to answer and 5 programming tasks to complete. A couple of minutes of your time will help me tremendously. All of the data submitted will only be used for the purposes of the study and will be kept confidential</p>
     </div>
 
     <form action="{{ route('survey.submitfirst') }}" method="POST">
